@@ -14,7 +14,7 @@ def home(request):
 
 def post_detail(request, slug):
   post = get_object_or_404(Post, slug=slug)
-  context = {'post': post}
+  context = {'post': post, 'author_first_name': post.author.first_name, 'author_last_name': post.author.last_name}
   return render(request, 'post_detail.html', context)
 
 def register(request):
