@@ -4,12 +4,15 @@
 
 The Blog Project is a web application developed as part of the IT course using the SCRUM methodology. The project implements a simple blogging platform where users can perform CRUD (Create, Read, Update, Delete) operations on blog posts. The application is built with HTML, CSS, and Django for the backend. The development process was managed using JIRA, and version control was handled through Git.
 
+## Workflow of the web application
+![WorkFlow Diagram](workflow-diagram.jpg)
+
 ## Tech Stack
 
 - Frontend: HTML, CSS
 - Backend: Django
-- Database: SQLite (default database used with Django)
-- Version Control: Git (GitHub repository for project code)
+- Database: SQLite
+- Version Control: Git
 - Project Management: JIRA
 - Diagramming Tool: Draw.io
 
@@ -108,7 +111,3 @@ The following team members contributed to this project:
 - Frontend: The frontend has been completed and is fully functional.
 - Backend: The CRUD operations are fully implemented and tested.
 - Demonstration: The project is now ready for demonstration and submission.
-  # Backend
-
-## Workflow of the web application
-![WorkFlow Diagram](workflow-diagram.jpg)
