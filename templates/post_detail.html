@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>{{ post.title }}</title>
+    <meta charset="UTF-8">
+    <title>{{ post.title }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center; /* Center the entire content */
+        }
+
+        .post-title {
+            font-size: 36px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .post-content {
+            font-size: 18px; /* Increase font size */
+            line-height: 1.6;
+            color: #666;
+            text-align: justify;
+            margin-bottom: 30px;
+            padding: 0 20px;
+
+            p {
+                margin-bottom: 15px;
+            }
+
+            h2, h3 {
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+
+            code {
+                background-color: #f2f2f2;
+                padding: 5px;
+                border-radius: 3px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <h1>{{ post.title }}</h1>
-  <p>{{ post.content }}</p>
+    <h1 class="post-title">{{ post.title }}</h1>
+    <div class="post-content">
+        {{ post.content }}
+    </div>
 </body>
 </html>

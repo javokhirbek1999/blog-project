@@ -9,7 +9,7 @@ def upload_to(instance, filename):
 
 
 class Post(models.Model):
-
+    author = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
     title = models.CharField(max_length=250)
     thumbnail = models.ImageField(upload_to=upload_to, default='posts/default.jpg')
     content = models.TextField()
@@ -21,6 +21,11 @@ class Post(models.Model):
 
     class Meta:
         ordering = ('-published',)
+        permissions = [
+            ('add_own_post', 'Can add own post'),
+            ('change_own_post', 'Can change own post'),
+            ('delete_own_post', 'Can delete own post'),
+        ]
     
 
     def __str__(self):
