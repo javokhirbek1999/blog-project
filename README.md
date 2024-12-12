@@ -71,6 +71,8 @@ The following team members contributed to this project:
 - **Javokhirbek Khaydaraliev** (ID: 40797)
 - **Aliia Sherikbaeva** (ID: 62550)
 - **Aiana Ibraiim kyzy** (ID: 41288)
+- **Yuldoshov Shakhzod** (ID: 41821)
+- **Asadov Shukrulla** (ID: 41156)
 
 ## Documentation
 
