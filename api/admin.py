@@ -5,6 +5,7 @@ from django.utils.translation import gettext_lazy as _
 
 
 from api.models.user import User
+from api.models.blog import Post
 
 
 
@@ -28,3 +29,8 @@ class UserAdminConfig(UserAdmin):
         })
     )
 
+
+@admin.register(Post)
+class PostAdmin(admin.ModelAdmin):
+    list_display = ('id', 'title', 'published')
+    prepopulated_fields = {'slug': ('title',)}
