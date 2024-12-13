@@ -36,49 +36,49 @@ The core functionalities of the application include:
 1. Clone the repository:
    
 ```bash
-   git clone https://github.com/javokhirbek1999/blog-project.git
+git clone https://github.com/javokhirbek1999/blog-project.git
 ```
 
 2. Navigate to the project directory:
    
 ```bash
-   cd blog-project
+cd blog-project
 ```
 
 2. Make sure to setup a new virtual environment:
 
 ```bash
-   python -m venv venv
+python -m venv venv
 ```
 
 3. Activate your new environment:
 
 ```bash
-   .\venv\Scripts\activate
+.\venv\Scripts\activate
 ```
 
 3. Install required dependencies:
    
 ```bash
-   pip install -r requirements.txt
+pip install -r requirements.txt
 ```   
 
 4. Make the database migrations:
    
 ```bash
-   python manage.py makemigrations
+python manage.py makemigrations
 ```
 
 5. Migrate the database:
 
 ```bash
-   python manage.py migrate
+python manage.py migrate
 ```
 
 5. Start the development server:
    
 ```bash
-   python manage.py runserver
+python manage.py runserver
 ```
 
 6. Open your browser and visit your localhost at http://127.0.0.1:8000/ to view the application.
