@@ -25,7 +25,7 @@ class UserManager(BaseUserManager):
         if not email:
             raise ValueError(_('Email is required, please enter your email'))
         
-        user = self.model(email=self.normalize_email(email), first_name=first_name, last_name=last_name, **kwargs)
+        user = self.model(email=self.normalize_email(email).lower(), first_name=first_name, last_name=last_name, **kwargs)
 
         # Set password for user
         user.set_password(password)
