@@ -1,5 +1,5 @@
 from django.dispatch import receiver
-from django.db.models.signals import post_save
+from django.db.models.signals import post_save, pre_save
 from django.contrib.contenttypes.models import ContentType
 from django.contrib.auth.models import Permission
 from api.models import User, Post
@@ -17,4 +17,11 @@ def assign_custom_permissions(sender, instance, created, **kwargs):
         ])
         instance.user_permissions.add(*permissions)
         instance.save()
-        print('Permission are added')
+        # print('Permission are added')
+
+
+@receiver(post_save, sender=Post)
+def make_the_post_link_unique(sender, instance, created, **kwargs):
+    if created and Post.objects.filter(slug=instance.slug).count() > 1:
+        instance.slug += "-" + str(instance.id)
+        instance.save()
