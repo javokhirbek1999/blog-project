@@ -85,10 +85,10 @@ python manage.py runserver
 
 ## Project Structure
 
-- Frontend: HTML and CSS files are located in the frontend/ directory.
-- Backend: Django application files are located in the backend/ directory.
+- Frontend: HTML and CSS.
+- Backend: Django.
 - Database: SQLite database used by default.
-- Diagrams: All project diagrams are stored in the diagrams/ folder and referenced in the README.
+- Diagrams: All project diagrams are stored in the root folder and referenced in the README.
 
 ## Group Members
 
